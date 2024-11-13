@@ -1,0 +1,71 @@
+/* Ajustes generales para el navbar */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra suave */
+    padding: 0.8rem 1.5rem;
+}
+
+/* Estilos para el logo */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ddd; /* Cambia el color al pasar el ratón */
+}
+
+/* Estilos para los enlaces del navbar */
+.nav-link {
+    color: #ccc;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 0.3rem 0.8rem;
+}
+
+/* Estilos para el botón de 'Iniciar Sesión' */
+.nav-link.btn-outline-light {
+    border-color: #ccc;
+    color: #ccc;
+    transition: all 0.3s ease;
+}
+
+.nav-link.btn-outline-light:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+/* Estilos para el botón de 'Registrarse' */
+.nav-link.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: 500;
+}
+
+.nav-link.btn-primary:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el ratón */
+}
+
+/* Estilos para el botón de toggler en pantallas pequeñas */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml; charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Ajustes para alinear mejor el contenido en dispositivos pequeños */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        padding-top: 1rem;
+    }
+}
